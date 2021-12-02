@@ -37,5 +37,41 @@ body {
 
 
 /* Target alle heading tags op de pagina en zet hun font-family op 'Noto Sans JP', sans-serif */
+body{
+    background-color: #FFFFFF;
+}
 
+#header-image{
+    width: 100%;
+}
 
+ul {
+    color: hsl(110, 29%, 52%);
+}
+
+a{
+    text-decoration: none;
+    color: hsl(359, 79%, 56%);
+
+}
+a:visited{
+
+    color: hsl(110, 29%, 52%);
+}
+a:hover{
+   color: hsl(210, 29%, 52%);
+}
+
+.copyright-notice{
+    font-size: smaller ;
+}
+
+input[type=submit]{
+    background:red;
+
+}
+text:focus{
+    border-color: aqua;
+    border-bottom-style: double;
+    border-width: 5px;
+}

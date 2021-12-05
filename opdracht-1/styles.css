@@ -31,17 +31,21 @@ ul {
 
 /* 1.4 Haal de text-decoration van navigatie-links weg, geef onbezochte links de kleur hsl(359, 79%, 56%) en verander de kleur wanneer de gebruiker er overheen hovert. */
 /*1.4 */
-a{
+nav a {
     text-decoration: none;
     color: hsl(359, 79%, 56%);
 
 }
 
+nav a:hover{
+    color:aquamarine;
+}
+nav a:visited{
+    color:deeppink;
+}
 
 /* 1.5 Maak een hover- en visited stijl voor alle links in 'main'. */
-/*1.5 in chrome werkt a:visited niet goed voor de links bovenaan de pagina.
-Na op bijv. de link 'about' te klikken, wordt de link kleur niet groen.
-In firefox werkt het wel zoals verwacht. Enig idee wat ik fout doe?
+/*1.5
  */
 a:visited{
 

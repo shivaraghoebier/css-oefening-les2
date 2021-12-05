@@ -9,69 +9,78 @@ body {
 }
 
 /* 1.1 Geef de 'img' tag in the header een ID en zet zijn breedte op 100% */
-
-
-
-/* 1.2 Verander de kleur van alle list items in de unordered list naar hsl(110, 29%, 52%) */
-
-
-
-/* 1.3 Geef de 'span' tag in de footer een beschrijvende class name en maak de lettergrootte kleiner  */
-
-
-
-/* 1.4 Haal de text-decoration van navigatie-links weg, geef onbezochte links de kleur hsl(359, 79%, 56%) en verander de kleur wanneer de gebruiker er overheen hovert. */
-
-
-
-/* 1.5 Maak een hover- en visited stijl voor alle links in 'main'. */
-
-
-
-/* Verander de achtergrond van de SignUp button. Tip: https://developer.mozilla.org/en-US/docs/Web/CSS/Attribute_selectors  */
-
-
-
-/* Geef het tekst-veld een blauwe rand wanneer hij in focus is */
-
-
-
-/* Target alle heading tags op de pagina en zet hun font-family op 'Noto Sans JP', sans-serif */
-body{
-    background-color: #FFFFFF;
-}
-
+/*1.1*/
 #header-image{
     width: 100%;
 }
 
+
+/* 1.2 Verander de kleur van alle list items in de unordered list naar hsl(110, 29%, 52%) */
+/*1.2*/
 ul {
     color: hsl(110, 29%, 52%);
 }
 
+
+/* 1.3 Geef de 'span' tag in de footer een beschrijvende class name en maak de lettergrootte kleiner  */
+/*1.3 */
+.copyright-notice{
+    font-size: smaller ;
+}
+
+
+/* 1.4 Haal de text-decoration van navigatie-links weg, geef onbezochte links de kleur hsl(359, 79%, 56%) en verander de kleur wanneer de gebruiker er overheen hovert. */
+/*1.4 */
 a{
     text-decoration: none;
     color: hsl(359, 79%, 56%);
 
 }
+
+
+/* 1.5 Maak een hover- en visited stijl voor alle links in 'main'. */
+/*1.5 in chrome werkt a:visited niet goed voor de links bovenaan de pagina.
+Na op bijv. de link 'about' te klikken, wordt de link kleur niet groen.
+In firefox werkt het wel zoals verwacht. Enig idee wat ik fout doe?
+ */
 a:visited{
 
     color: hsl(110, 29%, 52%);
 }
+
+
 a:hover{
-   color: hsl(210, 29%, 52%);
+    color: hsl(210, 29%, 52%);
 }
 
-.copyright-notice{
-    font-size: smaller ;
-}
 
+/* Verander de achtergrond van de SignUp button. Tip: https://developer.mozilla.org/en-US/docs/Web/CSS/Attribute_selectors  */
 input[type=submit]{
     background:red;
 
 }
-text:focus{
-    border-color: aqua;
+
+
+/* Geef het tekst-veld een blauwe rand wanneer hij in focus is */
+input[type=text]:focus{
+
     border-bottom-style: double;
     border-width: 5px;
+    border-color: aqua;
 }
+
+
+/* Target alle heading tags op de pagina en zet hun font-family op 'Noto Sans JP', sans-serif */
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Noto Sans JP', sans-serif;
+}
+
+
+
+
+
+
+
+
+
+

@@ -36,10 +36,8 @@ nav a {
     color: hsl(359, 79%, 56%);
 
 }
-nav a.nav-links:visited {
-    color:blue;
-}
-nav a.nav-links:hover {
+
+nav  a:hover {
     color:aquamarine;
 }
 
